@@ -41,7 +41,7 @@ export const ReviewsContextProvider = ({ children }) => {
   const fetchReviews = useCallback(async (hotelId) => {
     try {
       const data = await fetch(
-        `https://my-json-server.typicode.com/PacktPublishing/React-Projects-Second-Edition/hotels/${hotelId}/reviews`,
+        `http://localhost:3000/hotels/${hotelId}/reviews`,
       );
       const result = await data.json();
 
