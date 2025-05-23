@@ -70,3 +70,12 @@ When we run this first test we can see that a new foder is created: `__snapshots
 
 > Relative commit: First Component test example. 
 
+In the second example we pass a _prop_ to the NavBar component and a new snapshot is (re)generated, but if we change the value for the prop the snapshot is not regenerated and 'cause the prop in the test and the prop in the snapshot doesn't match the test fail.
+
+`vitest -u` or `vitest --update` to update snapshot, more on this: https://vitest.dev/guide/snapshot.html
+We'll add another command in package.json, `test:snapUpdate` --> `npm run test:snapUpdate` to update snapshot.
+
+> Relative commit: Second unit component test.
+
+
+

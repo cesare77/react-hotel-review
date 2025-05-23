@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`The NavBar component should render 1`] = `
+exports[`The NavBar component should render with a title 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -10,7 +10,9 @@ exports[`The NavBar component should render 1`] = `
       >
         <h2
           class="sc-fmZSGO UdxBS"
-        />
+        >
+          test application 2
+        </h2>
       </div>
     </div>
   </body>,
@@ -20,7 +22,9 @@ exports[`The NavBar component should render 1`] = `
     >
       <h2
         class="sc-fmZSGO UdxBS"
-      />
+      >
+        test application 2
+      </h2>
     </div>
   </div>,
   "debug": [Function],
