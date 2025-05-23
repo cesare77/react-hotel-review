@@ -77,5 +77,18 @@ We'll add another command in package.json, `test:snapUpdate` --> `npm run test:s
 
 > Relative commit: Second unit component test.
 
+Vitest has a very useful feature that show you how many lines of code have been covered by your tests.
+The higher your testing coverage, the more reason to assume your code is stable.
+You can check the test coverage of your code by executing the test script command with the --coverage flag and an extra -- in between, or use the following command in your terminal.
 
+`npm run test -- --coverage` is executed with a new script command added to package.json script section `test:coverage`
+
+> [!Note]
+> Testing coverage only tells us something about the lines and the functions of your code that have been tested and not their actual implementation. Having a test coverage of 100% doesn't mean that there aren't any bugs in your code, as there will always be edge cases. Also, reaching a testing coverage of 100% means that you may end up spending more time on writing tests than on actual code. Usually, a testing coverage above 80% is considered good practice.
+
+We have a value of 33% of coverage in the branch column and that can be inceremented by implement other prop in the NavBar component tha now is missing, now we have title prop but the component can receive three prop (goBack and openForm).
+
+More on https://vitest.dev/guide/coverage.html;
+
+> Relative commit: Vitest Unit test coverage.
 
